@@ -46,3 +46,4 @@ choco install firefoxesr -y
 choco install powertoys -y
 choco install virtualbox -y
 choco install github-desktop -y
+choco install nearby-share -y
