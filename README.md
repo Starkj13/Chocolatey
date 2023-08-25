@@ -1,5 +1,3 @@
-  Chocolatey .GridWrapp { display: grid; grid-template-columns: auto auto auto; margin-top: 1%; padding-left: 20%; } .text-align{ margin-left: 5%; }
-
 A bat file for windows to install all necessary software
 ========================================================
 
