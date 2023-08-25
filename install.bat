@@ -24,9 +24,7 @@ echo Now chocolatey should be ready and we can go ahead
 echo .
 pause
 
-rem enable clicking on choco:// links in the browser
-rem https://community.chocolatey.org/packages/choco-protocol-support
-rem choco install choco-protocol-support
+
 
 choco install adobereader -y
 choco install googlechrome -y
@@ -43,7 +41,7 @@ choco install visualstudio2022community -y
 choco install googledrive -y
 choco install vnc-viewer -y
 choco install wiztree -y
-choco install git.install -y
+choco install git -y
 choco install firefoxesr -y
 choco install powertoys -y
 choco install virtualbox -y
