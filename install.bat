@@ -4,13 +4,19 @@ echo This will first install chocolatey, then other tools
 echo .
 echo Browse https://chocolatey.org/packages for packages
 echo .
-echo Ensure that your cmd.exe runs as Administrator
-echo .
-echo If at university, disable any proxy in the Internet Explorer Network settings.
-echo .
+rem Checks if bat file is started as admin
+net session >nul 2>&1
+if %errorlevel% == 0 (
+    echo This batch file is running with admin privileges.
+) else (
+    echo This batch file is NOT running with admin privileges.
+    pause
+    exit
+)
 pause
 echo .
 
+rem Installs Chocolatey
 powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 pause
 
